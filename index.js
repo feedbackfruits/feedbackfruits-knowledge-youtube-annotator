@@ -14,15 +14,7 @@ const Cayley = require('cayley');
 const { Observable: { empty } } = require('rxjs');
 const PQueue = require('p-queue');
 const ytdl = require('ytdl-core')
-const getSubtitles = require('@joegesualdo/get-youtube-subtitles-node');
-const google = require('googleapis');
-
-
-const youtube = google.youtube({
-  version: 'v3',
-  auth: YOUTUBE_API_KEY
-});
-
+const fetch = require('node-fetch');
 
 const { source, sink, send } = memux({
   name: NAME,
@@ -33,45 +25,54 @@ const { source, sink, send } = memux({
 
 const cayley = Cayley(CAYLEY_ADDRESS);
 const queue = new PQueue({
-  concurrency: 32
+  concurrency: 2
 });
 
+function unescapeHtml(safe) {
+  return safe
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'");
+}
+
+const done = {};
+
 source.flatMap(({ action: { type, quad: { subject, object } }, progress }) => {
-  if (!progress) debugger;
-  const regex = /^<(https:\/\/www\.youtube\.com\/watch\?v=\w+)>$/;
-
-  const subjectMatch = subject.match(regex);
-  const objectMatch = object.match(regex);
-
-  const url = subjectMatch ? subjectMatch[1] : (objectMatch ? objectMatch[1] : null);
-
-  if (!url) return Promise.resolve(progress);
-
   return queue.add(() => {
-    return new Promise((resolve, reject) => {
-      youtube.captions.list({ part: 'id,snippet', videoId: 'JU67TL2L1CA' }, (err, response) => {
-        if (err) return reject(err);
+    if (!progress) debugger;
+    const regex = /^<(https:\/\/www\.youtube\.com\/watch\?v=\w+)>$/;
 
-        const captionId = response.items.find(item => {
-          return item.snippet.language === 'en' && item.snippet.trackKind === 'standard'
-        }).id;
+    const subjectMatch = subject.match(regex);
+    const objectMatch = object.match(regex);
 
-        youtube.captions.download({ id: captionId }, (err, response) => {
-          debugger;
-          if (err) return reject(err);
+    const url = subjectMatch ? subjectMatch[1] : (objectMatch ? objectMatch[1] : null);
 
+    if (!url) return Promise.resolve();
+    if (url in done) return Promise.resolve();
 
-        });
+    done[url] = true;
 
-        return resolve();
-      });
+    return ytdl.getInfo(url).then(info => {
 
+      const arr = info.caption_tracks.split(/\&|,/);
+
+      const capts = arr.reduce((memo, value) => {
+        const prev = memo[0];
+        const [key, val] = value.split('=');
+        const curr = { [key]: decodeURIComponent(val) };
+
+        if (key in prev) return [curr, ...memo];
+        return [ Object.assign({}, prev, curr), ...memo.slice(1) ];
+      }, [{}]);
+
+      const capt = capts.find(capt => capt.v.startsWith('.en'));
+      const url = capt.u;
+      return fetch(url);
+    }).then(response => response.text()).then(data => {
+      const text = unescapeHtml(unescapeHtml(data.replace(/<.*>/g, ' ')));
+      return send({ type: 'write', quad: { subject: `<${url}>`, predicate: '<http://schema.org/text>', object: text } });
     });
-
-    // debugger;
-    // return ytdl.getInfo(url).then(info => {
-    //   debugger;
-    //   // send()
-    // });
   }).then(() => progress)
 }).subscribe(sink);
