@@ -55,10 +55,11 @@ source.flatMap(({ action: { type, quad: { subject, object } }, progress }) => {
     done[url] = true;
 
     return ytdl.getInfo(url).then(info => {
-
+      if (!info || !info.caption_tracks) return;
       const arr = info.caption_tracks.split(/\&|,/);
 
       const capts = arr.reduce((memo, value) => {
+        if (!value) return memo;
         const prev = memo[0];
         const [key, val] = value.split('=');
         const curr = { [key]: decodeURIComponent(val) };
@@ -67,13 +68,13 @@ source.flatMap(({ action: { type, quad: { subject, object } }, progress }) => {
         return [ Object.assign({}, prev, curr), ...memo.slice(1) ];
       }, [{}]);
 
-      const capt = capts.find(capt => capt.v.startsWith('.en'));
-      if (!capt || !capt.u) return Promise.resolve();
+      const capt = capts.find(capt => capt && capt.v && capt.v.startsWith('.en'));
+      if (!capt || !capt.u) return;
 
       const url = capt.u;
       return fetch(url).then(response => response.text()).then(data => {
         const text = unescapeHtml(unescapeHtml(data.replace(/<.*>/g, ' ')));
-        return send({ type: 'write', quad: { subject: `<${url}>`, predicate: '<http://schema.org/text>', object: text } });
+        return send({ type: 'write', quad: { subject, predicate: '<http://schema.org/text>', object: text } });
       });
     })
   }).then(() => progress)
