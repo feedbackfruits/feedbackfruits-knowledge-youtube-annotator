@@ -68,11 +68,13 @@ source.flatMap(({ action: { type, quad: { subject, object } }, progress }) => {
       }, [{}]);
 
       const capt = capts.find(capt => capt.v.startsWith('.en'));
+      if (!capt || !capt.u) return Promise.resolve();
+
       const url = capt.u;
-      return fetch(url);
-    }).then(response => response.text()).then(data => {
-      const text = unescapeHtml(unescapeHtml(data.replace(/<.*>/g, ' ')));
-      return send({ type: 'write', quad: { subject: `<${url}>`, predicate: '<http://schema.org/text>', object: text } });
-    });
+      return fetch(url).then(response => response.text()).then(data => {
+        const text = unescapeHtml(unescapeHtml(data.replace(/<.*>/g, ' ')));
+        return send({ type: 'write', quad: { subject: `<${url}>`, predicate: '<http://schema.org/text>', object: text } });
+      });
+    })
   }).then(() => progress)
 }).subscribe(sink);
