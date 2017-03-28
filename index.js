@@ -25,7 +25,7 @@ const { source, sink, send } = memux({
 
 const cayley = Cayley(CAYLEY_ADDRESS);
 const queue = new PQueue({
-  concurrency: 2
+  concurrency: 8
 });
 
 function unescapeHtml(safe) {
@@ -74,6 +74,7 @@ source.flatMap(({ action: { type, quad: { subject, object } }, progress }) => {
       const url = capt.u;
       return fetch(url).then(response => response.text()).then(data => {
         const text = unescapeHtml(unescapeHtml(data.replace(/<.*>/g, ' ')));
+        if (text.trim().length === 0) return;
         return send({ type: 'write', quad: { subject, predicate: '<http://schema.org/text>', object: text } });
       });
     })
