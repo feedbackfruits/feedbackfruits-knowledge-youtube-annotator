@@ -1,11 +1,11 @@
 require('dotenv').load({ silent: true });
 
 const {
-  NAME = 'feedbackfruits-knowledge-youtube-annotator',
+  NAME = 'feedbackfruits-knowledge-youtube-annotator-v2',
   CAYLEY_ADDRESS = 'http://cayley:64210',
   KAFKA_ADDRESS = 'tcp://kafka:9092',
-  INPUT_TOPIC = 'quad_updates',
-  OUTPUT_TOPIC = 'quad_update_requests',
+  INPUT_TOPIC, //= 'quad_updates',
+  OUTPUT_TOPIC, // = 'quad_update_requests',
   YOUTUBE_API_KEY
 } = process.env;
 
@@ -49,13 +49,18 @@ source.flatMap(({ action: { type, quad: { subject, object } }, progress }) => {
 
     const url = subjectMatch ? subjectMatch[1] : (objectMatch ? objectMatch[1] : null);
 
+    console.log('URL!!!', url);
+
     if (!url) return Promise.resolve();
     if (url in done) return Promise.resolve();
 
     done[url] = true;
 
     return ytdl.getInfo(url).then(info => {
-      if (!info || !info.caption_tracks) return;
+      if (!info || !info.caption_tracks) {
+        console.log('No info found...');
+        return;
+      };
       const arr = info.caption_tracks.split(/\&|,/);
 
       const capts = arr.reduce((memo, value) => {
@@ -68,15 +73,31 @@ source.flatMap(({ action: { type, quad: { subject, object } }, progress }) => {
         return [ Object.assign({}, prev, curr), ...memo.slice(1) ];
       }, [{}]);
 
+      console.log('capts', capts.length);
+
       const capt = capts.find(capt => capt && capt.v && capt.v.startsWith('.en'));
       if (!capt || !capt.u) return;
 
       const url = capt.u;
-      return fetch(url).then(response => response.text()).then(data => {
-        const text = unescapeHtml(unescapeHtml(data.replace(/<.*>/g, ' ')));
-        if (text.trim().length === 0) return;
-        return send({ type: 'write', quad: { subject, predicate: '<http://schema.org/text>', object: text } });
+
+      console.log('capt url:', url);
+
+      function doStuff(response) {
+        return response.text().then(data => {
+          const text = unescapeHtml(unescapeHtml(data.replace(/<.*>/g, ' ')));
+          if (text.trim().length === 0) return;
+          return send({ type: 'write', quad: { subject, predicate: '<http://schema.org/text>', object: text } });
+        });
+      }
+
+      return fetch(url).then(doStuff).catch(e => {
+        console.error(e);
+        console.log('Retrying with endpoint prepended...');
+        fetch(`https://www.youtube.com/${url}`).then(doStuff)
       });
-    })
+    }).catch(e => {
+      console.log('WARNING! HEAVY HACKERY!');
+      console.error(e);
+    });
   }).then(() => progress)
 }).subscribe(sink);
