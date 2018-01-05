@@ -14,6 +14,7 @@ export default async function init({ name }) {
   const receive = (send: SendFn) => async (operation: Operation<Doc>) => {
     console.log('Received operation:', operation);
     const { action, data: doc } = operation;
+    console.log('Doc is operable?', isOperableDoc(doc));
     if (!(action === 'write') || !isOperableDoc(doc)) return;
 
     const annotatedDoc = await annotate(doc);
@@ -34,11 +35,11 @@ async function annotate(doc: Doc): Promise<Doc> {
   // console.log('Annotating doc:', doc);
   const captions = await getCaptionsForLanguage(doc['@id'], 'en');
   // console.log('Got captions:', captions);
-  if (captions === '') return doc;
+  if (captions.length === 0) return doc;
   // console.log(`Setting ${Helpers.decodeIRI(Context.text)} to captions`);
   return {
     ...doc,
-    [Helpers.decodeIRI(Context.text)]: captions
+    [Helpers.decodeIRI(Context.graph.$.caption)]: captions
   };
 }
 
