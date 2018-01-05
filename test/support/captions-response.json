@@ -1,0 +1,143 @@
+[
+  {
+    "lc": "uk",
+    "t": "1",
+    "n": "Ukrainian",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2C\nja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=uk",
+    "v": ".uk"
+  },
+  {
+    "lc": "tr",
+    "t": "1",
+    "n": "Turkish",
+    "u": "https://www.youtube.com/api/timedtext\n?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpir\ne&expire=1515187546&caps=asr&hl=en_US&lang=tr",
+    "v": ".tr"
+  },
+  {
+    "lc": "th",
+    "t": "1",
+    "n": "Thai",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC5\n7AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=th",
+    "v": ".th"
+  },
+  {
+    "lc": "ta",
+    "t": "1",
+    "n": "Tamil",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&\nv=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=ta",
+    "v": ".ta"
+  },
+  {
+    "lc": "sr",
+    "t": "1",
+    "n": "Serbian",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A3989\n0BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr\n&hl=en_US&lang=sr",
+    "v": ".sr"
+  },
+  {
+    "lc": "no",
+    "t": "1",
+    "n": "Norwegian",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&a\nsr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=no",
+    "v": ".no"
+  },
+  {
+    "lc": "ko",
+    "t": "1",
+    "n": "Korean",
+    "u": "https://w\nww.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=\nasr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=ko",
+    "v": ".ko"
+  },
+  {
+    "lc": "ja",
+    "t": "1",
+    "n": "Japanese",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CF\nCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=ja",
+    "v": ".ja"
+  },
+  {
+    "lc": "it",
+    "t": "1",
+    "n": "Italian",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2\nCen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=it",
+    "v": ".it"
+  },
+  {
+    "lc": "de",
+    "t": "1",
+    "n": "German",
+    "u": "https://www.youtube.com/api/time\ndtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2C\nexpire&expire=1515187546&caps=asr&hl=en_US&lang=de",
+    "v": ".de"
+  },
+  {
+    "lc": "ka",
+    "t": "1",
+    "n": "Georgian",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0\nFE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=ka",
+    "v": ".ka"
+  },
+  {
+    "lc": "en",
+    "t": "1",
+    "n": "English+-+English",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr\n%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=en&name=English",
+    "v": ".en.eEY6OEpapPo"
+  },
+  {
+    "lc": "en",
+    "t": "1",
+    "n": "English",
+    "u": "https://www.youtube\n.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%\n2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=en",
+    "v": ".en"
+  },
+  {
+    "lc": "en",
+    "v": "a.en",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B\n0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&kind=asr&lang=en",
+    "t": "1",
+    "k": "asr",
+    "n": "English+(auto-generated)"
+  },
+  {
+    "lc": "nl",
+    "t": "1",
+    "n": "Dutch",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&\nasr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=nl",
+    "v": ".nl"
+  },
+  {
+    "lc": "da",
+    "t": "1",
+    "n": "Danish",
+    "u": "https://\nwww.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams\n=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=da",
+    "v": ".da"
+  },
+  {
+    "lc": "cs",
+    "t": "1",
+    "n": "Czech",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA\n.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=cs",
+    "v": ".cs"
+  },
+  {
+    "lc": "zh-Hant-TW",
+    "t": "1",
+    "n": "zh-Hant-TW",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2C\nko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=zh-Hant-TW",
+    "v": ".zh-Hant-TW"
+  },
+  {
+    "lc": "my",
+    "t": "1",
+    "n": "Myanmar+(Burmese)",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED24BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0\nq6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_US&lang=my",
+    "v": ".my"
+  },
+  {
+    "lc": "bg",
+    "t": "1",
+    "n": "Bulgarian",
+    "u": "https://www.youtube.com/api/timedtext?signature=69416533E437A39890BD7ED2\n4BCD23547C23CFCA.9CC78DF3A593F4AB03B0FE2837FC57AC221E9556&key=yttt1&asr_langs=de%2Cko%2Cit%2Cen%2Cja%2Cfr%2Ces%2Cru%2Cnl%2Cpt&v=pi3WWQ0q6Lc&sparams=asr_langs%2Ccaps%2Cv%2Cexpire&expire=1515187546&caps=asr&hl=en_\nUS&lang=bg",
+    "v": ".bg"
+  }
+]
