@@ -39,13 +39,14 @@
   "license": "MIT",
   "dependencies": {
     "@joegesualdo/get-youtube-subtitles-node": "0.0.13",
+    "@types/node": "^9.4.0",
     "@types/node-uuid": "^0.0.28",
     "@types/xml2json": "^0.10.0",
     "cayley": "^0.2.1",
     "dotenv": "^4.0.0",
-    "feedbackfruits-knowledge-context": "feedbackfruits/feedbackfruits-knowledge-context#feature/ontology",
+    "feedbackfruits-knowledge-context": "feedbackfruits/feedbackfruits-knowledge-context#^1.1.1",
     "feedbackfruits-knowledge-engine": "feedbackfruits/feedbackfruits-knowledge-engine#feature/ontology",
-    "googleapis": "^18.0.0",
+    "googleapis": "^25.0.0",
     "memux": "github:knowledge-express/memux#~0.4.1",
     "node-fetch": "^1.6.3",
     "node-uuid": "^1.4.8",
@@ -54,7 +55,7 @@
     "rxjs": "^5.0.0-rc.4",
     "striptags": "^3.0.1",
     "xml2json": "^0.11.0",
-    "ytdl-core": "^0.16.2"
+    "ytdl-core": "^0.20.0"
   },
   "devDependencies": {
     "ava": "^0.20.0",

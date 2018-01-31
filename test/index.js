@@ -3,61 +3,22 @@ import test from 'ava';
 import memux from 'memux';
 import init from '../lib';
 import { NAME, KAFKA_ADDRESS, OUTPUT_TOPIC, INPUT_TOPIC, PAGE_SIZE, START_PAGE } from '../lib/config';
+import * as Engine from 'feedbackfruits-knowledge-engine';
 
 test('it exists', t => {
   t.not(init, undefined);
 });
 
-const videoDoc = {
-  "@id": "https://www.youtube.com/watch?v=pi3WWQ0q6Lc",
-  "http://schema.org/sourceOrganization": [
-    "KhanAcademy"
-  ],
-  "http://schema.org/about": [
-    "<http://dbpedia.org/resource/Divisor>",
-    "<http://dbpedia.org/resource/Elementary_arithmetic>",
-    "<http://dbpedia.org/resource/Integer>",
-    "<http://dbpedia.org/resource/Greatest_common_divisor>",
-    "<http://dbpedia.org/resource/Integer>",
-    "<http://dbpedia.org/resource/Divisor>",
-    "<http://dbpedia.org/resource/Greatest_common_divisor>",
-    "<http://dbpedia.org/resource/Elementary_arithmetic>",
-    "<http://dbpedia.org/resource/Integer>",
-    "<http://dbpedia.org/resource/Greatest_common_divisor>",
-    "<http://dbpedia.org/resource/Divisor>",
-    "<http://dbpedia.org/resource/Elementary_arithmetic>"
-  ],
-  "http://schema.org/license": [
-    "<http://creativecommons.org/licenses/by-nc-sa/3.0>"
-  ],
-  "http://schema.org/name": [
-    "Multiplying positive and negative fractions"
-  ],
-  "http://schema.org/description": [
-    "See examples of multiplying and dividing fractions with negative numbers."
-  ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": [
-    "<https://knowledge.express/Resource>",
-    "<http://schema.org/VideoObject>"
-  ],
-  "https://knowledge.express/topic": [
-    "<https://www.khanacademy.org/video/multiplying-negative-and-positive-fractions>"
-  ],
-  "http://schema.org/image": [
-    "<https://cdn.kastatic.org/googleusercontent/vkR4iP2PXl0SGkwmmpX-7N9mKNP7RWX8ilHMuROW745BJBvmp_eElCItbyPY-tweaVYgddFoNaaHpXSanPm92ZUS>"
-  ]
-};
-
+const videoDoc = require('./support/compacted');
 const captions = require('./support/captions');
 
-function filterObj(obj, prop) {
-  const newObj = { ...obj };
-  delete newObj[prop];
-  return newObj;
-}
 
 test('it works', async (t) => {
   try {
+    // const quads = await Engine.Helpers.docToQuads(videoDoc);
+    // console.log(quads);
+    // return t.is(true, true);
+
     let _resolve, _reject;
     const resultPromise = new Promise((resolve, reject) => {
       _resolve = resolve;
@@ -66,7 +27,7 @@ test('it works', async (t) => {
 
     const receive = (message) => {
       console.log('Received message!', message);
-      _resolve(message);
+      if ([].concat(message.data["@type"]).find(type => type === "VideoObject")) _resolve(message);
     };
 
     const send = await memux({
@@ -89,14 +50,11 @@ test('it works', async (t) => {
     const result = await resultPromise;
     console.log('Result data:', result.data);
 
-    return t.deepEqual(result, {
-      action: 'write',
-      data: {
-        ...videoDoc,
-        ['https://knowledge.express/caption']: captions
-      },
-      key: 'https://www.youtube.com/watch?v=pi3WWQ0q6Lc',
-      label: NAME,
+    const sorted = { ...result.data, caption: result.data.caption.sort() };
+
+    return t.deepEqual(sorted, {
+      ...videoDoc,
+      caption: captions.map(caption => caption["@id"]).sort()
     });
   } catch(e) {
     console.error(e);
