@@ -1,0 +1,21 @@
+{
+  "@id": "https://www.youtube.com/watch?v=pi3WWQ0q6Lc",
+  "@type": [
+    "Resource",
+    "VideoObject"
+  ],
+  "description": "See examples of multiplying and dividing fractions with negative numbers.",
+  "image": [
+    "https://cdn.kastatic.org/googleusercontent/vkR4iP2PXl0SGkwmmpX-7N9mKNP7RWX8ilHMuROW745BJBvmp_eElCItbyPY-tweaVYgddFoNaaHpXSanPm92ZUS"
+  ],
+  "license": [
+    "http://creativecommons.org/licenses/by-nc-sa/3.0"
+  ],
+  "name": "Multiplying positive and negative fractions",
+  "sourceOrganization": [
+    "https://www.khanacademy.org/"
+  ],
+  "topic": [
+    "https://www.khanacademy.org/video/multiplying-negative-and-positive-fractions"
+  ]
+}

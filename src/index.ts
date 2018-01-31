@@ -6,7 +6,8 @@ import { Operation } from 'memux';
 import * as Config from './config';
 import * as Context from 'feedbackfruits-knowledge-context';
 
-import { unescapeHtml, getCaptionsForLanguage, isOperableDoc } from './helpers';
+import * as TimedText from './timedtext';
+import { unescapeHtml, isOperableDoc } from './helpers';
 
 export type SendFn = (operation: Operation<Doc>) => Promise<void>;
 
@@ -19,8 +20,16 @@ export default async function init({ name }) {
 
     const annotatedDoc = await annotate(doc);
     if (isOperableDoc(annotatedDoc)) return;
+    console.log('Sending annotated doc:', annotatedDoc);
 
-    return send({ action: 'write', key: annotatedDoc['@id'], data: annotatedDoc });
+    try {
+      const result = await send({ action: 'write', key: annotatedDoc['@id'], data: annotatedDoc });
+      return result;
+    } catch(e) {
+      console.log('ERROR!');
+      console.error(e);
+      throw e;
+    }
   }
 
   return await Annotator({
@@ -33,13 +42,13 @@ export default async function init({ name }) {
 
 async function annotate(doc: Doc): Promise<Doc> {
   // console.log('Annotating doc:', doc);
-  const captions = await getCaptionsForLanguage(doc['@id'], 'en');
+  const captions = await TimedText.getCaptionsForLanguage(doc['@id'], 'en');
   // console.log('Got captions:', captions);
   if (captions.length === 0) return doc;
   // console.log(`Setting ${Helpers.decodeIRI(Context.text)} to captions`);
   return {
     ...doc,
-    [Helpers.decodeIRI(Context.graph.$.caption)]: captions
+    [Context.iris.$.caption]: captions
   };
 }
 
