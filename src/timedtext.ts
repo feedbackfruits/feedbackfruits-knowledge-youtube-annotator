@@ -3,7 +3,7 @@
 import fetch from 'node-fetch';
 import * as xml2json from 'xml2json';
 
-import * as Context from 'feedbackfruits-knowledge-context';
+import { Context } from 'feedbackfruits-knowledge-engine';
 import * as Config from './config';
 import * as Helpers from './helpers';
 
