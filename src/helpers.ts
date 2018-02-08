@@ -1,5 +1,4 @@
-import { Doc, Helpers } from 'feedbackfruits-knowledge-engine';
-import * as Context from 'feedbackfruits-knowledge-context';
+import { Doc, Helpers, Context } from 'feedbackfruits-knowledge-engine';
 
 export function unescapeHtml(safe) {
   return safe

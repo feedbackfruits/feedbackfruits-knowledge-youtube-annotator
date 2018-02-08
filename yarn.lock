@@ -72,8 +72,14 @@
   resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.0.tgz#2633470a4eabe9a47cd9a45fdb20ed5f93407bca"
 
 "@types/lodash@^4.14.55":
-  version "4.14.100"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.100.tgz#f353dd9d3a9785638b6cb8023e6639097bd31969"
+  version "4.14.102"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.102.tgz#586a3e22385fc79b07cef9c5a1c8a5387986fbc8"
+
+"@types/n3@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@types/n3/-/n3-0.0.3.tgz#4ebf90763bfe4aefa1a0c2051606b756c659416e"
+  dependencies:
+    "@types/node" "*"
 
 "@types/node-uuid@^0.0.28":
   version "0.0.28"
@@ -86,8 +92,8 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.5.tgz#6f9e8164ae1a55a9beb1d2571cfb7acf9d720c61"
 
 "@types/node@^8.0.14", "@types/node@^8.0.8":
-  version "8.5.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.9.tgz#7155cfb4ae405bca4dd8df1a214c339e939109bf"
+  version "8.9.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.9.1.tgz#5a329d73a97f3c5a626dfe0ed8c0b831fee5357a"
 
 "@types/node@^9.4.0":
   version "9.4.0"
@@ -1297,7 +1303,11 @@ commander@2.12.2:
   version "2.12.2"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
 
-commander@^2.12.1, commander@^2.9.0:
+commander@^2.12.1:
+  version "2.14.1"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.14.1.tgz#2235123e37af8ca3c65df45b026dbd357b01b9aa"
+
+commander@^2.9.0:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.13.0.tgz#6964bca67685df7c1f1430c584f07d7597885b9c"
 
@@ -1807,9 +1817,9 @@ feedbackfruits-knowledge-context@feedbackfruits/feedbackfruits-knowledge-context
     tslint "^5.5.0"
     typescript "^2.4.1"
 
-feedbackfruits-knowledge-context@feedbackfruits/feedbackfruits-knowledge-context#^1.1.2:
-  version "1.1.2"
-  resolved "https://codeload.github.com/feedbackfruits/feedbackfruits-knowledge-context/tar.gz/bddc7845114bd294b37be60aedbeb5747de2fc11"
+feedbackfruits-knowledge-context@feedbackfruits/feedbackfruits-knowledge-context#^1.1.3:
+  version "1.1.3"
+  resolved "https://codeload.github.com/feedbackfruits/feedbackfruits-knowledge-context/tar.gz/5247430a6eec3ba20187739f46ed1f8c4c96a14b"
   dependencies:
     "@types/node" "^8.0.8"
     recursive-readdir-sync "^1.0.6"
@@ -1818,14 +1828,16 @@ feedbackfruits-knowledge-context@feedbackfruits/feedbackfruits-knowledge-context
 
 feedbackfruits-knowledge-engine@feedbackfruits/feedbackfruits-knowledge-engine#feature/ontology:
   version "1.1.0"
-  resolved "https://codeload.github.com/feedbackfruits/feedbackfruits-knowledge-engine/tar.gz/967366076b436a8c35dbef524e98d66cd039ef11"
+  resolved "https://codeload.github.com/feedbackfruits/feedbackfruits-knowledge-engine/tar.gz/31a0260ade4055543dbf81cd8aecc8a08586cb7e"
   dependencies:
+    "@types/n3" "^0.0.3"
     "@types/node" "^8.0.14"
     dotenv "^4.0.0"
-    feedbackfruits-knowledge-context feedbackfruits/feedbackfruits-knowledge-context#^1.1.2
+    feedbackfruits-knowledge-context feedbackfruits/feedbackfruits-knowledge-context#^1.1.3
     isuri "^2.0.3"
     jsonld "^0.4.12"
     memux "^0.4.2"
+    n3 "^0.11.2"
     tslint "^5.5.0"
     typescript "^2.4.1"
 
@@ -2933,7 +2945,11 @@ lodash@=4.16.4:
   version "4.16.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.16.4.tgz#01ce306b9bad1319f2a5528674f88297aeb70127"
 
-lodash@^4.0.1, lodash@^4.1.0, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.3.0, lodash@~4.17.2:
+lodash@^4.0.1, lodash@^4.1.0, lodash@^4.3.0:
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
+
+lodash@^4.14.0, lodash@^4.17.4, lodash@~4.17.2:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -3180,6 +3196,10 @@ murmur-hash-js@^1.0.0:
 mute-stream@~0.0.4:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
+
+n3@^0.11.2:
+  version "0.11.2"
+  resolved "https://registry.yarnpkg.com/n3/-/n3-0.11.2.tgz#25cb2ef1b75b38cbfcc1979cf92e2bdba7f183e0"
 
 nan@^2.3.0, nan@^2.3.5:
   version "2.8.0"
@@ -4820,8 +4840,8 @@ tslint@^5.5.0:
     tsutils "^2.12.1"
 
 tsutils@^2.12.1:
-  version "2.20.0"
-  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.20.0.tgz#303394064bc80be8ee04e10b8609ae852e9312d3"
+  version "2.21.0"
+  resolved "https://registry.yarnpkg.com/tsutils/-/tsutils-2.21.0.tgz#43466a2283a0abce64e2209bc732ad72f8a04fab"
   dependencies:
     tslib "^1.8.1"
 

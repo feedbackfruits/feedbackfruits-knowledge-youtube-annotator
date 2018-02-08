@@ -1,10 +1,9 @@
 import fetch from 'node-fetch';
 
-import { Annotator, Doc, Helpers, Config as _Config } from 'feedbackfruits-knowledge-engine';
+import { Annotator, Doc, Helpers, Config as _Config, Context } from 'feedbackfruits-knowledge-engine';
 import { Operation } from 'memux';
 
 import * as Config from './config';
-import * as Context from 'feedbackfruits-knowledge-context';
 
 import * as TimedText from './timedtext';
 import { unescapeHtml, isOperableDoc } from './helpers';
