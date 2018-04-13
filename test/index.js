@@ -12,6 +12,12 @@ test('it exists', t => {
 const videoDoc = require('./support/compacted');
 const captions = require('./support/captions');
 
+function sortArray(docs) {
+  return docs.sort((a, b) => {
+    if (typeof a === "string" && typeof b === "string") return a.localeCompare(b);
+    return a["@id"].localeCompare(b["@id"]);
+  });
+}
 
 test('it works', async (t) => {
   try {
@@ -50,11 +56,11 @@ test('it works', async (t) => {
     const result = await resultPromise;
     console.log('Result data:', result.data);
 
-    const sorted = { ...result.data, caption: result.data.caption.sort() };
+    const sorted = { ...result.data, caption: sortArray(result.data.caption) };
 
     return t.deepEqual(sorted, {
       ...videoDoc,
-      caption: captions.map(caption => caption["@id"]).sort()
+      caption: sortArray(captions) //.map(caption => caption["@id"]).sort()
     });
   } catch(e) {
     console.error(e);

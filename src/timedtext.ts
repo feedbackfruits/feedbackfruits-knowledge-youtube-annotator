@@ -15,7 +15,7 @@ export type CaptionResponse = {
 
 export type Caption = {
   "@id": string,
-  "@type": string[],
+  "@type": string | string[],
   text: string,
   language: string,
   startsAfter: string,
@@ -52,7 +52,7 @@ export async function getCaptionsForLanguage(videoURL: string, language: string)
   console.log(videoId);
 
   const response = await fetch(`https://video.google.com/timedtext?&lang=${language}&v=${videoId}`);
-  return parseCaptions(videoURL, await response.text(), language);
+  return await parseCaptions(videoURL, await response.text(), language);
 }
 
 
@@ -71,6 +71,6 @@ export function parseCaptions(videoURL: string, captionsString: string, language
 
     const id = generateCaptionId(videoURL, partialCaption);
 
-    return { ...partialCaption, "@id": id, "@type": [ Context.iris.$.VideoCaption ] };
+    return { ...partialCaption, "@id": id, "@type": "VideoCaption" };
   });
 }
