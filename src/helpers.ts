@@ -19,5 +19,5 @@ export function isYoutubeDoc(doc: Doc): boolean {
 }
 
 export function isOperableDoc(doc: Doc): boolean {
-  return isYoutubeDoc(doc) && !(Helpers.decodeIRI(Context.iris.$.caption) in doc);
+  return isYoutubeDoc(doc) && !(Context.iris.$.caption in doc && doc[Context.iris.$.caption] != null);
 }
