@@ -10,25 +10,38 @@ import { unescapeHtml, isOperableDoc } from './helpers';
 
 export type SendFn = (operation: Operation<Doc>) => Promise<void>;
 
+const frame = {
+  "@context": Context.context,
+  "@type": Context.iris.$.Resource
+};
+
 export default async function init({ name }) {
   const receive = (send: SendFn) => async (operation: Operation<Doc>) => {
     console.log('Received operation:', operation);
     const { action, data: doc } = operation;
-    console.log('Doc is operable?', isOperableDoc(doc));
-    if (!(action === 'write') || !isOperableDoc(doc)) return;
+    const framed = await Doc.frame([ doc ], frame)
+    if (framed.length === 0) return; // Empty output ==> input 'rejected' by frame, not usable for this engine
 
-    const annotatedDoc = await annotate(doc);
-    if (isOperableDoc(annotatedDoc)) return;
-    console.log('Sending annotated doc:', annotatedDoc);
+    await Promise.all(framed.map(async doc => {
+      console.log('Doc is operable?', isOperableDoc(doc));
+      if (!(action === 'write') || !isOperableDoc(doc)) return;
 
-    try {
-      const result = await send({ action: 'write', key: annotatedDoc['@id'], data: annotatedDoc });
-      return result;
-    } catch(e) {
-      console.log('ERROR!');
-      console.error(e);
-      throw e;
-    }
+      const annotatedDoc = await annotate(doc);
+      if (isOperableDoc(annotatedDoc)) return;
+      console.log('Sending annotated doc:', annotatedDoc);
+
+      try {
+        const result = await send({ action: 'write', key: annotatedDoc['@id'], data: annotatedDoc });
+        return result;
+      } catch(e) {
+        console.log('ERROR!');
+        console.error(e);
+        throw e;
+      }
+    }));
+
+    return;
+
   }
 
   return await Annotator({
