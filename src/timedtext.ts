@@ -63,8 +63,8 @@ export function parseCaptions(videoURL: string, captionsString: string, language
     const partialCaption = {
       "@id": null,
       "@type": null,
-      startsAfter: `P${caption.start}S`,
-      duration: `P${caption.dur}S`,
+      startsAfter: `PT${caption.start}S`,
+      duration: `PT${caption.dur}S`,
       text,
       language
     };
