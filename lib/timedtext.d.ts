@@ -10,6 +10,7 @@ export declare type CaptionResponse = {
 export declare type Caption = {
     "@id": string;
     "@type": string | string[];
+    relativeStartPosition: number;
     text: string;
     language: string;
     startsAfter: string;

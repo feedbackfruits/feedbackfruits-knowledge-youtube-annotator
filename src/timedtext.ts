@@ -16,6 +16,7 @@ export type CaptionResponse = {
 export type Caption = {
   "@id": string,
   "@type": string | string[],
+  relativeStartPosition: number,
   text: string,
   language: string,
   startsAfter: string,
@@ -58,18 +59,24 @@ export async function getCaptionsForLanguage(videoURL: string, language: string)
 
 export function parseCaptions(videoURL: string, captionsString: string, language: string): Array<Caption>  {
   const json: CaptionResponse = <any>xml2json.toJson(captionsString, { object: true, trim: false });
-  return json.transcript.text.map(caption => {
+  let startIndex = 0;
+  const captions = json.transcript.text;
+  return captions.map((caption, index) => {
     const text = '$t' in caption ? Helpers.trimNewlines(Helpers.unescapeHtml(caption['$t'])) : '';
     const partialCaption = {
       "@id": null,
       "@type": null,
       startsAfter: `PT${caption.start}S`,
       duration: `PT${caption.dur}S`,
+      relativeStartPosition: startIndex,
       text,
       language
     };
 
     const id = generateCaptionId(videoURL, partialCaption);
+
+    // Add 1 for the spaces in between the captions, except on the last caption
+    startIndex = startIndex + text.length + (index === captions.length - 1 ? 0 : 1 );
 
     return { ...partialCaption, "@id": id, "@type": "VideoCaption" };
   });
