@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import * as iso8601 from 'duration-iso-8601';
 
 import { Annotator, Doc, Helpers, Config as _Config, Context } from 'feedbackfruits-knowledge-engine';
 import { Operation } from 'memux';
@@ -57,9 +58,18 @@ async function annotate(doc: Doc): Promise<Doc> {
   const captions = await TimedText.getCaptionsForLanguage(doc['@id'], 'en');
   // console.log('Got captions:', captions);
   if (captions.length === 0) return doc;
-  // console.log(`Setting ${Helpers.decodeIRI(Context.text)} to captions`);
+
+  const lastCaption = captions[captions.length - 1];
+
+  const lastCaptionStart = iso8601.convertToSecond(lastCaption.startsAfter);
+  const lastCaptionDuration = iso8601.convertToSecond(lastCaption.startsAfter);
+  const totalDuration = `PT${lastCaptionStart + lastCaptionDuration}S`;
+  const captionLength = lastCaption.relativeStartPosition + lastCaption.text.length;
+
   return {
     ...doc,
+    totalDuration,
+    captionLength,
     [Context.iris.$.caption]: captions
   };
 }
