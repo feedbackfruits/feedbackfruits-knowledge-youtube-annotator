@@ -1,12 +1,11 @@
 import fetch from 'node-fetch';
 import * as iso8601 from 'duration-iso-8601';
 
-import { Annotator, Doc, Helpers, Config as _Config, Context } from 'feedbackfruits-knowledge-engine';
+import { Annotator, Doc, Helpers, Config as _Config, Context, Captions } from 'feedbackfruits-knowledge-engine';
 import { Operation } from 'memux';
 
 import * as Config from './config';
 
-import * as TimedText from './timedtext';
 import { unescapeHtml, isOperableDoc } from './helpers';
 
 export type SendFn = (operation: Operation<Doc>) => Promise<void>;
@@ -53,9 +52,16 @@ export default async function init({ name }) {
 
 }
 
+const YTRegex = /^https:\/\/www\.youtube\.com\/watch\?v=([\w|-]+)$/;
+export async function getCaptionsForLanguage(videoURL: string, language: string) {
+  const videoId = videoURL.match(YTRegex)[1];
+  const url = `https://video.google.com/timedtext?v=${videoId}&lang=${language}`;
+  return Captions.getCaptions(url);
+}
+
 async function annotate(doc: Doc): Promise<Doc> {
   // console.log('Annotating doc:', doc);
-  const captions = await TimedText.getCaptionsForLanguage(doc['@id'], 'en');
+  const captions = await getCaptionsForLanguage(doc['@id'], 'en');
   // console.log('Got captions:', captions);
   if (captions.length === 0) return doc;
 
@@ -68,8 +74,8 @@ async function annotate(doc: Doc): Promise<Doc> {
 
   return {
     ...doc,
-    totalDuration,
-    captionLength,
+    [Context.iris.$.contentDuration]: totalDuration,
+    [Context.iris.$.contentLength]: captionLength,
     [Context.iris.$.caption]: captions
   };
 }
