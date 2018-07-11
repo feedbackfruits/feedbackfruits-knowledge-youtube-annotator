@@ -60,9 +60,9 @@ test('it works', async (t) => {
 
     return t.deepEqual(sorted, {
       ...videoDoc,
-      totalDuration: 'PT539.42S',
-      captionLength: 3358,
-      caption: sortArray(captions) //.map(caption => caption["@id"]).sort()
+      contentDuration: 'PT539.42S',
+      contentLength: 3358,
+      caption: sortArray(captions).map(caption => caption["@id"]).sort()
     });
   } catch(e) {
     console.error(e);

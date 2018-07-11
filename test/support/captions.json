@@ -1,6 +1,6 @@
 [
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQwUy1QVDAuNlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#0",
     "@type": "VideoCaption",
     "relativeStartPosition": 0,
     "startsAfter": "PT0S",
@@ -9,7 +9,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQwLjZTLVBUMy40N1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#1",
     "@type": "VideoCaption",
     "relativeStartPosition": 1,
     "startsAfter": "PT0.6S",
@@ -18,7 +18,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ0LjA3Uy1QVDQuOTc1Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#2",
     "@type": "VideoCaption",
     "relativeStartPosition": 48,
     "startsAfter": "PT4.07S",
@@ -27,7 +27,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ5LjA0NVMtUFQzLjQ3NVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#3",
     "@type": "VideoCaption",
     "relativeStartPosition": 89,
     "startsAfter": "PT9.045S",
@@ -36,7 +36,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMi41MlMtUFQyLjg4Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#4",
     "@type": "VideoCaption",
     "relativeStartPosition": 90,
     "startsAfter": "PT12.52S",
@@ -45,7 +45,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNS40Uy1QVDEuNDRT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#5",
     "@type": "VideoCaption",
     "relativeStartPosition": 137,
     "startsAfter": "PT15.4S",
@@ -54,7 +54,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNi44NFMtUFQzLjAxUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#6",
     "@type": "VideoCaption",
     "relativeStartPosition": 165,
     "startsAfter": "PT16.84S",
@@ -63,7 +63,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxOS44NVMtUFQ2Ljc2Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#7",
     "@type": "VideoCaption",
     "relativeStartPosition": 221,
     "startsAfter": "PT19.85S",
@@ -72,7 +72,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNi42MVMtUFQyLjFT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#8",
     "@type": "VideoCaption",
     "relativeStartPosition": 262,
     "startsAfter": "PT26.61S",
@@ -81,7 +81,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyOC43MVMtUFQzLjI0Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#9",
     "@type": "VideoCaption",
     "relativeStartPosition": 298,
     "startsAfter": "PT28.71S",
@@ -90,7 +90,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQzMS45NVMtUFQyLjc1Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#10",
     "@type": "VideoCaption",
     "relativeStartPosition": 350,
     "startsAfter": "PT31.95S",
@@ -99,7 +99,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQzNC43Uy1QVDEuODlT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#11",
     "@type": "VideoCaption",
     "relativeStartPosition": 397,
     "startsAfter": "PT34.7S",
@@ -108,7 +108,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQzNi41OVMtUFQ0LjA2Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#12",
     "@type": "VideoCaption",
     "relativeStartPosition": 409,
     "startsAfter": "PT36.59S",
@@ -117,7 +117,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ0MC42NVMtUFQyLjMyNVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#13",
     "@type": "VideoCaption",
     "relativeStartPosition": 461,
     "startsAfter": "PT40.65S",
@@ -126,7 +126,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ0Mi45NzVTLVBUMi4zNzVT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#14",
     "@type": "VideoCaption",
     "relativeStartPosition": 497,
     "startsAfter": "PT42.975S",
@@ -135,7 +135,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ0NS4zNVMtUFQxLjY4Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#15",
     "@type": "VideoCaption",
     "relativeStartPosition": 555,
     "startsAfter": "PT45.35S",
@@ -144,7 +144,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ0Ny4wM1MtUFQyLjA2Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#16",
     "@type": "VideoCaption",
     "relativeStartPosition": 591,
     "startsAfter": "PT47.03S",
@@ -153,7 +153,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ0OS4wOVMtUFQxLjM3Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#17",
     "@type": "VideoCaption",
     "relativeStartPosition": 641,
     "startsAfter": "PT49.09S",
@@ -162,7 +162,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ1MC40NlMtUFQ0LjAxUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#18",
     "@type": "VideoCaption",
     "relativeStartPosition": 658,
     "startsAfter": "PT50.46S",
@@ -171,7 +171,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ1NC40N1MtUFQyLjg1Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#19",
     "@type": "VideoCaption",
     "relativeStartPosition": 690,
     "startsAfter": "PT54.47S",
@@ -180,7 +180,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ1Ny4zMlMtUFQ0LjgzUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#20",
     "@type": "VideoCaption",
     "relativeStartPosition": 744,
     "startsAfter": "PT57.32S",
@@ -189,7 +189,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ2Mi4xNVMtUFQxLjY0M1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#21",
     "@type": "VideoCaption",
     "relativeStartPosition": 793,
     "startsAfter": "PT62.15S",
@@ -198,7 +198,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ2My43OTNTLVBUMS40MTZT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#22",
     "@type": "VideoCaption",
     "relativeStartPosition": 830,
     "startsAfter": "PT63.793S",
@@ -207,7 +207,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ2NS4yMDlTLVBUMi4xOTFT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#23",
     "@type": "VideoCaption",
     "relativeStartPosition": 865,
     "startsAfter": "PT65.209S",
@@ -216,7 +216,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ2Ny40Uy1QVDMuNDFT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#24",
     "@type": "VideoCaption",
     "relativeStartPosition": 891,
     "startsAfter": "PT67.4S",
@@ -225,7 +225,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ3MC44MVMtUFQyLjY2Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#25",
     "@type": "VideoCaption",
     "relativeStartPosition": 938,
     "startsAfter": "PT70.81S",
@@ -234,7 +234,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ3My40N1MtUFQxLjY1Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#26",
     "@type": "VideoCaption",
     "relativeStartPosition": 987,
     "startsAfter": "PT73.47S",
@@ -243,7 +243,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ3NS4xMlMtUFQxLjg0Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#27",
     "@type": "VideoCaption",
     "relativeStartPosition": 1022,
     "startsAfter": "PT75.12S",
@@ -252,7 +252,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ3Ni45NlMtUFQzLjExUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#28",
     "@type": "VideoCaption",
     "relativeStartPosition": 1064,
     "startsAfter": "PT76.96S",
@@ -261,7 +261,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ4MC4wN1MtUFQxLjY1Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#29",
     "@type": "VideoCaption",
     "relativeStartPosition": 1106,
     "startsAfter": "PT80.07S",
@@ -270,7 +270,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ4MS43MlMtUFQ4LjMyUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#30",
     "@type": "VideoCaption",
     "relativeStartPosition": 1128,
     "startsAfter": "PT81.72S",
@@ -279,7 +279,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ5MC4wNFMtUFQyLjI0Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#31",
     "@type": "VideoCaption",
     "relativeStartPosition": 1188,
     "startsAfter": "PT90.04S",
@@ -288,7 +288,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ5Mi4yOFMtUFQ0LjUxUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#32",
     "@type": "VideoCaption",
     "relativeStartPosition": 1240,
     "startsAfter": "PT92.28S",
@@ -297,7 +297,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQ5Ni43OVMtUFQzLjc2Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#33",
     "@type": "VideoCaption",
     "relativeStartPosition": 1256,
     "startsAfter": "PT96.79S",
@@ -306,7 +306,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMDAuNTVTLVBUMS42N1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#34",
     "@type": "VideoCaption",
     "relativeStartPosition": 1257,
     "startsAfter": "PT100.55S",
@@ -315,7 +315,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMDIuMjJTLVBUMS43NVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#35",
     "@type": "VideoCaption",
     "relativeStartPosition": 1294,
     "startsAfter": "PT102.22S",
@@ -324,7 +324,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMDMuOTdTLVBUMi4zN1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#36",
     "@type": "VideoCaption",
     "relativeStartPosition": 1319,
     "startsAfter": "PT103.97S",
@@ -333,7 +333,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMDYuMzRTLVBUMy44M1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#37",
     "@type": "VideoCaption",
     "relativeStartPosition": 1350,
     "startsAfter": "PT106.34S",
@@ -342,7 +342,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMTAuMTdTLVBUMi45NTNT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#38",
     "@type": "VideoCaption",
     "relativeStartPosition": 1378,
     "startsAfter": "PT110.17S",
@@ -351,7 +351,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMTMuMTIzUy1QVDUuNDA3Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#39",
     "@type": "VideoCaption",
     "relativeStartPosition": 1425,
     "startsAfter": "PT113.123S",
@@ -360,7 +360,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMTguNTNTLVBUMy41MlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#40",
     "@type": "VideoCaption",
     "relativeStartPosition": 1437,
     "startsAfter": "PT118.53S",
@@ -369,7 +369,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMjIuMDVTLVBUMi42NVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#41",
     "@type": "VideoCaption",
     "relativeStartPosition": 1438,
     "startsAfter": "PT122.05S",
@@ -378,7 +378,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMjQuN1MtUFQyLjA2Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#42",
     "@type": "VideoCaption",
     "relativeStartPosition": 1496,
     "startsAfter": "PT124.7S",
@@ -387,7 +387,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMjYuNzZTLVBUMS43NFM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#43",
     "@type": "VideoCaption",
     "relativeStartPosition": 1541,
     "startsAfter": "PT126.76S",
@@ -396,7 +396,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMjguNVMtUFQxLjcyUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#44",
     "@type": "VideoCaption",
     "relativeStartPosition": 1579,
     "startsAfter": "PT128.5S",
@@ -405,7 +405,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMzAuMjJTLVBUMi4yMlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#45",
     "@type": "VideoCaption",
     "relativeStartPosition": 1619,
     "startsAfter": "PT130.22S",
@@ -414,7 +414,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMzIuNDRTLVBUMi4yNlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#46",
     "@type": "VideoCaption",
     "relativeStartPosition": 1659,
     "startsAfter": "PT132.44S",
@@ -423,7 +423,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMzQuN1MtUFQyLjlT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#47",
     "@type": "VideoCaption",
     "relativeStartPosition": 1707,
     "startsAfter": "PT134.7S",
@@ -432,7 +432,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxMzcuNlMtUFQ0LjMyUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#48",
     "@type": "VideoCaption",
     "relativeStartPosition": 1737,
     "startsAfter": "PT137.6S",
@@ -441,7 +441,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNDEuOTJTLVBUMi4zNVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#49",
     "@type": "VideoCaption",
     "relativeStartPosition": 1791,
     "startsAfter": "PT141.92S",
@@ -450,7 +450,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNDQuMjdTLVBUMi43NVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#50",
     "@type": "VideoCaption",
     "relativeStartPosition": 1828,
     "startsAfter": "PT144.27S",
@@ -459,7 +459,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNDcuMDJTLVBUMi4wN1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#51",
     "@type": "VideoCaption",
     "relativeStartPosition": 1879,
     "startsAfter": "PT147.02S",
@@ -468,7 +468,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNDkuMDlTLVBUMS40MlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#52",
     "@type": "VideoCaption",
     "relativeStartPosition": 1907,
     "startsAfter": "PT149.09S",
@@ -477,7 +477,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNTAuNTFTLVBUMy40Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#53",
     "@type": "VideoCaption",
     "relativeStartPosition": 1921,
     "startsAfter": "PT150.51S",
@@ -486,7 +486,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNTMuOTFTLVBUMi41N1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#54",
     "@type": "VideoCaption",
     "relativeStartPosition": 1979,
     "startsAfter": "PT153.91S",
@@ -495,7 +495,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNTYuNDhTLVBUMy4yMlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#55",
     "@type": "VideoCaption",
     "relativeStartPosition": 2021,
     "startsAfter": "PT156.48S",
@@ -504,7 +504,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNTkuN1MtUFQzLjQ2Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#56",
     "@type": "VideoCaption",
     "relativeStartPosition": 2071,
     "startsAfter": "PT159.7S",
@@ -513,7 +513,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNjMuMTZTLVBUMS45M1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#57",
     "@type": "VideoCaption",
     "relativeStartPosition": 2104,
     "startsAfter": "PT163.16S",
@@ -522,7 +522,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNjUuMDlTLVBUMS4wNlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#58",
     "@type": "VideoCaption",
     "relativeStartPosition": 2126,
     "startsAfter": "PT165.09S",
@@ -531,7 +531,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNjYuMTVTLVBUOC43MVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#59",
     "@type": "VideoCaption",
     "relativeStartPosition": 2148,
     "startsAfter": "PT166.15S",
@@ -540,7 +540,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNzQuODZTLVBUMS41Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#60",
     "@type": "VideoCaption",
     "relativeStartPosition": 2196,
     "startsAfter": "PT174.86S",
@@ -549,7 +549,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxNzYuMzZTLVBUMy45NDlT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#61",
     "@type": "VideoCaption",
     "relativeStartPosition": 2233,
     "startsAfter": "PT176.36S",
@@ -558,7 +558,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxODAuMzA5Uy1QVDEuNzkxUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#62",
     "@type": "VideoCaption",
     "relativeStartPosition": 2276,
     "startsAfter": "PT180.309S",
@@ -567,7 +567,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxODIuMVMtUFQyLjk5Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#63",
     "@type": "VideoCaption",
     "relativeStartPosition": 2320,
     "startsAfter": "PT182.1S",
@@ -576,7 +576,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxODUuMDlTLVBUMi4wMlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#64",
     "@type": "VideoCaption",
     "relativeStartPosition": 2384,
     "startsAfter": "PT185.09S",
@@ -585,7 +585,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxODcuMTFTLVBUMi4yOTlT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#65",
     "@type": "VideoCaption",
     "relativeStartPosition": 2424,
     "startsAfter": "PT187.11S",
@@ -594,7 +594,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxODkuNDA5Uy1QVDEuNDE2Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#66",
     "@type": "VideoCaption",
     "relativeStartPosition": 2479,
     "startsAfter": "PT189.409S",
@@ -603,7 +603,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxOTAuODI1Uy1QVDMuMjk1Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#67",
     "@type": "VideoCaption",
     "relativeStartPosition": 2514,
     "startsAfter": "PT190.825S",
@@ -612,7 +612,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxOTQuMTJTLVBUMS41N1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#68",
     "@type": "VideoCaption",
     "relativeStartPosition": 2560,
     "startsAfter": "PT194.12S",
@@ -621,7 +621,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxOTUuNjlTLVBUMlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#69",
     "@type": "VideoCaption",
     "relativeStartPosition": 2597,
     "startsAfter": "PT195.69S",
@@ -630,7 +630,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQxOTcuNjlTLVBUMi42Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#70",
     "@type": "VideoCaption",
     "relativeStartPosition": 2640,
     "startsAfter": "PT197.69S",
@@ -639,7 +639,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMDAuMjlTLVBUMS44Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#71",
     "@type": "VideoCaption",
     "relativeStartPosition": 2684,
     "startsAfter": "PT200.29S",
@@ -648,7 +648,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMDIuMDlTLVBUMi44MjJT",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#72",
     "@type": "VideoCaption",
     "relativeStartPosition": 2721,
     "startsAfter": "PT202.09S",
@@ -657,7 +657,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMDQuOTEyUy1QVDEuMDgzUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#73",
     "@type": "VideoCaption",
     "relativeStartPosition": 2758,
     "startsAfter": "PT204.912S",
@@ -666,7 +666,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMDUuOTk1Uy1QVDMuMDI1Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#74",
     "@type": "VideoCaption",
     "relativeStartPosition": 2785,
     "startsAfter": "PT205.995S",
@@ -675,7 +675,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMDkuMDJTLVBUMy42Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#75",
     "@type": "VideoCaption",
     "relativeStartPosition": 2786,
     "startsAfter": "PT209.02S",
@@ -684,7 +684,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMTIuNjJTLVBUNy40OFM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#76",
     "@type": "VideoCaption",
     "relativeStartPosition": 2831,
     "startsAfter": "PT212.62S",
@@ -693,7 +693,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMjAuMVMtUFQyLjM1Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#77",
     "@type": "VideoCaption",
     "relativeStartPosition": 2871,
     "startsAfter": "PT220.1S",
@@ -702,7 +702,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMjIuNDVTLVBUNi44MlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#78",
     "@type": "VideoCaption",
     "relativeStartPosition": 2907,
     "startsAfter": "PT222.45S",
@@ -711,7 +711,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMjkuMjdTLVBUNC40NVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#79",
     "@type": "VideoCaption",
     "relativeStartPosition": 2932,
     "startsAfter": "PT229.27S",
@@ -720,7 +720,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMzMuNzJTLVBUMi4yMlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#80",
     "@type": "VideoCaption",
     "relativeStartPosition": 2933,
     "startsAfter": "PT233.72S",
@@ -729,7 +729,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMzUuOTRTLVBUMi45N1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#81",
     "@type": "VideoCaption",
     "relativeStartPosition": 2965,
     "startsAfter": "PT235.94S",
@@ -738,7 +738,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyMzguOTFTLVBUMy41OVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#82",
     "@type": "VideoCaption",
     "relativeStartPosition": 3021,
     "startsAfter": "PT238.91S",
@@ -747,7 +747,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNDIuNVMtUFQ0LjI5Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#83",
     "@type": "VideoCaption",
     "relativeStartPosition": 3041,
     "startsAfter": "PT242.5S",
@@ -756,7 +756,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNDYuNzlTLVBUMS4xUw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#84",
     "@type": "VideoCaption",
     "relativeStartPosition": 3088,
     "startsAfter": "PT246.79S",
@@ -765,7 +765,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNDcuODlTLVBUNC42NlM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#85",
     "@type": "VideoCaption",
     "relativeStartPosition": 3100,
     "startsAfter": "PT247.89S",
@@ -774,7 +774,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNTIuNTVTLVBUMS42Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#86",
     "@type": "VideoCaption",
     "relativeStartPosition": 3101,
     "startsAfter": "PT252.55S",
@@ -783,7 +783,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNTQuMTVTLVBUNC4zM1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#87",
     "@type": "VideoCaption",
     "relativeStartPosition": 3139,
     "startsAfter": "PT254.15S",
@@ -792,7 +792,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNTguNDhTLVBUMy41M1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#88",
     "@type": "VideoCaption",
     "relativeStartPosition": 3180,
     "startsAfter": "PT258.48S",
@@ -801,7 +801,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNjIuMDFTLVBUMS42NVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#89",
     "@type": "VideoCaption",
     "relativeStartPosition": 3215,
     "startsAfter": "PT262.01S",
@@ -810,7 +810,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNjMuNjZTLVBUMS44OVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#90",
     "@type": "VideoCaption",
     "relativeStartPosition": 3228,
     "startsAfter": "PT263.66S",
@@ -819,7 +819,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNjUuNTVTLVBUMS41N1M=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#91",
     "@type": "VideoCaption",
     "relativeStartPosition": 3261,
     "startsAfter": "PT265.55S",
@@ -828,7 +828,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNjcuMTJTLVBUMi41OVM=",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#92",
     "@type": "VideoCaption",
     "relativeStartPosition": 3284,
     "startsAfter": "PT267.12S",
@@ -837,7 +837,7 @@
     "language": "en"
   },
   {
-    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#UFQyNjkuNzFTLVBUMy40Uw==",
+    "@id": "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en#93",
     "@type": "VideoCaption",
     "relativeStartPosition": 3311,
     "startsAfter": "PT269.71S",
