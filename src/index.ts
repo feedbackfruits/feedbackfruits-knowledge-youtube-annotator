@@ -61,22 +61,21 @@ export async function getCaptionsForLanguage(videoURL: string, language: string)
 
 async function annotate(doc: Doc): Promise<Doc> {
   // console.log('Annotating doc:', doc);
-  const captions = await getCaptionsForLanguage(doc['@id'], 'en');
-  // console.log('Got captions:', captions);
+  const videoId = doc["@id"].match(YTRegex)[1];
+  const language = "en";
+  const captionUrl = `https://video.google.com/timedtext?v=${videoId}&lang=${language}`;
+  const captions = await Captions.getCaptions(captionUrl);
+  console.log('Got captions:', captions);
   if (captions.length === 0) return doc;
 
-  const lastCaption = captions[captions.length - 1];
-
-  const lastCaptionStart = iso8601.convertToSecond(lastCaption.startsAfter);
-  const lastCaptionDuration = iso8601.convertToSecond(lastCaption.startsAfter);
-  const totalDuration = `PT${lastCaptionStart + lastCaptionDuration}S`;
-  const captionLength = lastCaption.relativeStartPosition + lastCaption.text.length;
+  const metadata = Captions.toMetadata(captions);
+  console.log('Returned metadata:', metadata);
 
   return {
     ...doc,
-    [Context.iris.$.contentDuration]: totalDuration,
-    [Context.iris.$.contentLength]: captionLength,
-    [Context.iris.$.caption]: captions
+    [Context.iris.$.contentDuration]: metadata.totalDuration,
+    [Context.iris.$.contentLength]: metadata.totalLength,
+    [Context.iris.$.caption]: [ captionUrl ]
   };
 }
 
