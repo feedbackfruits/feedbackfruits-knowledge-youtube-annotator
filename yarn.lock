@@ -1808,24 +1808,24 @@ fclone@1.0.11, fclone@^1:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/fclone/-/fclone-1.0.11.tgz#10e85da38bfea7fc599341c296ee1d77266ee640"
 
-feedbackfruits-knowledge-context@feedbackfruits/feedbackfruits-knowledge-context#^1.1.7:
-  version "1.1.7"
-  resolved "https://codeload.github.com/feedbackfruits/feedbackfruits-knowledge-context/tar.gz/39dbb713cf6612f2003055517416e4e027d72768"
+feedbackfruits-knowledge-context@feedbackfruits/feedbackfruits-knowledge-context#^1.1.13:
+  version "1.1.13"
+  resolved "https://codeload.github.com/feedbackfruits/feedbackfruits-knowledge-context/tar.gz/535b6bc8015b218d8215bf246b742abf48299023"
   dependencies:
     "@types/node" "^8.0.8"
     recursive-readdir-sync "^1.0.6"
     tslint "^5.5.0"
     typescript "^2.4.1"
 
-"feedbackfruits-knowledge-engine@github:feedbackfruits/feedbackfruits-knowledge-engine#feature/captions-logic":
-  version "1.4.0"
-  resolved "https://codeload.github.com/feedbackfruits/feedbackfruits-knowledge-engine/tar.gz/7923c59185caadd972f89a9fee6d8bb12dc9d649"
+"feedbackfruits-knowledge-engine@github:feedbackfruits/feedbackfruits-knowledge-engine#^1.4.4":
+  version "1.4.4"
+  resolved "https://codeload.github.com/feedbackfruits/feedbackfruits-knowledge-engine/tar.gz/cf10ccf0b91a595ef27cfecb516830b0583f69a8"
   dependencies:
     "@types/n3" "^0.0.3"
     "@types/node" "^8.0.14"
     dotenv "^4.0.0"
     duration-iso-8601 "^1.1.0"
-    feedbackfruits-knowledge-context feedbackfruits/feedbackfruits-knowledge-context#^1.1.7
+    feedbackfruits-knowledge-context feedbackfruits/feedbackfruits-knowledge-context#^1.1.13
     isuri "^2.0.3"
     jsonld "^0.5.18"
     memux "^0.4.5"
@@ -1836,7 +1836,7 @@ feedbackfruits-knowledge-context@feedbackfruits/feedbackfruits-knowledge-context
     rdf-nx-parser "^1.0.3"
     tslint "^5.5.0"
     typescript "^2.4.1"
-    xml2json "^0.11.0"
+    xml2js "^0.4.19"
 
 figures@^2.0.0:
   version "2.0.0"
@@ -4316,7 +4316,7 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.1, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-sax@^1.1.3:
+sax@>=0.6.0, sax@^1.1.3:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
@@ -5168,6 +5168,13 @@ xhr2@^0.1.3:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/xhr2/-/xhr2-0.1.4.tgz#7f87658847716db5026323812f818cadab387a5f"
 
+xml2js@^0.4.19:
+  version "0.4.19"
+  resolved "https://registry.yarnpkg.com/xml2js/-/xml2js-0.4.19.tgz#686c20f213209e94abf0d1bcf1efaa291c7827a7"
+  dependencies:
+    sax ">=0.6.0"
+    xmlbuilder "~9.0.1"
+
 xml2json@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/xml2json/-/xml2json-0.11.0.tgz#1d54f1d868dbbd04892b845d7cbad94c528e16e4"
@@ -5175,6 +5182,10 @@ xml2json@^0.11.0:
     hoek "^4.0.1"
     joi "^9.0.4"
     node-expat "^2.3.15"
+
+xmlbuilder@~9.0.1:
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-9.0.7.tgz#132ee63d2ec5565c557e20f4c22df9aca686b10d"
 
 xmldom@0.1.19:
   version "0.1.19"

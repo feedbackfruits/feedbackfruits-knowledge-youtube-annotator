@@ -45,7 +45,7 @@
     "cayley": "^0.2.1",
     "dotenv": "^4.0.0",
     "duration-iso-8601": "^1.1.0",
-    "feedbackfruits-knowledge-engine": "github:feedbackfruits/feedbackfruits-knowledge-engine#feature/captions-logic",
+    "feedbackfruits-knowledge-engine": "github:feedbackfruits/feedbackfruits-knowledge-engine#^1.4.4",
     "googleapis": "^25.0.0",
     "memux": "github:knowledge-express/memux#~0.4.1",
     "node-fetch": "^1.6.3",

@@ -60,9 +60,9 @@ test('it works', async (t) => {
 
     return t.deepEqual(sorted, {
       ...videoDoc,
-      contentDuration: 'PT539.42S',
+      contentDuration: 'PT273.10999999999996S',
       contentLength: 3358,
-      caption: sortArray(captions).map(caption => caption["@id"]).sort()
+      caption: [ "https://video.google.com/timedtext?v=pi3WWQ0q6Lc&lang=en" ]
     });
   } catch(e) {
     console.error(e);
