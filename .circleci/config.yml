@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: ~/feedbackfruits-knowledge-youtube-annotator
     docker:
-      - image: node:8.5.0
+      - image: node:10
         environment:
           NODE_ENV: test
           INPUT_TOPIC: test_updates
@@ -38,11 +38,6 @@ jobs:
 
       - store_artifacts:
           path: coverage
-
-      - run:
-          name: Install Heroku CLI
-          command: |
-            wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
       - deploy:
           name: Deploy to Heroku

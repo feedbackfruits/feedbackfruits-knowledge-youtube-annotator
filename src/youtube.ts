@@ -8,7 +8,6 @@ const youtube = google.youtube({
   auth: Config.YOUTUBE_API_KEY
 });
 
-
 export async function getCaptions(videoURL) {
   const videoId = videoURL.match(YTRegex)[1];
   console.log(videoId);
