@@ -9,6 +9,9 @@ const {
   YOUTUBE_API_KEY
 } = process.env;
 
+
+const YT_REGEX = /^https?:\/\/www\.youtube\.com\/watch\?v=([\w|-]+)$/;
+
 export {
   NAME,
   CAYLEY_ADDRESS,
@@ -16,4 +19,5 @@ export {
   INPUT_TOPIC,
   OUTPUT_TOPIC,
   YOUTUBE_API_KEY,
+  YT_REGEX,
 }

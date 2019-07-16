@@ -1,15 +1,13 @@
 import * as google from 'googleapis';
 import * as Config from './config';
 
-const YTRegex = /^https:\/\/www\.youtube\.com\/watch\?v=([\w|-]+)$/;
-
 const youtube = google.youtube({
   version: 'v3',
   auth: Config.YOUTUBE_API_KEY
 });
 
 export async function getCaptions(videoURL) {
-  const videoId = videoURL.match(YTRegex)[1];
+  const videoId = videoURL.match(Config.YT_REGEX)[1];
   console.log(videoId);
 
   const captionsList = await new Promise<any>((resolve, reject) => {

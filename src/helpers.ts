@@ -1,4 +1,5 @@
 import { Doc, Helpers, Context } from 'feedbackfruits-knowledge-engine';
+import * as Config from './config';
 
 export function unescapeHtml(safe) {
   return safe
@@ -13,9 +14,8 @@ export function trimNewlines(str: string) {
   return str.replace('\n', ' ').trim();
 }
 
-const YTRegex = /^(https:\/\/www\.youtube\.com\/watch\?v=[\w|-]+)$/;
 export function isYoutubeDoc(doc: Doc): boolean {
-  return YTRegex.test(doc['@id']);
+  return Config.YT_REGEX.test(doc['@id']);
 }
 
 export function isOperableDoc(doc: Doc): boolean {

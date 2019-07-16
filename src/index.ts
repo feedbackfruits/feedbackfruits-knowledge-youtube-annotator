@@ -52,16 +52,15 @@ export default async function init({ name }) {
 
 }
 
-const YTRegex = /^https:\/\/www\.youtube\.com\/watch\?v=([\w|-]+)$/;
 export async function getCaptionsForLanguage(videoURL: string, language: string) {
-  const videoId = videoURL.match(YTRegex)[1];
+  const videoId = videoURL.match(Config.YT_REGEX)[1];
   const url = `https://video.google.com/timedtext?v=${videoId}&lang=${language}`;
   return Captions.getCaptions(url);
 }
 
 async function annotate(doc: Doc): Promise<Doc> {
   // console.log('Annotating doc:', doc);
-  const videoId = doc["@id"].match(YTRegex)[1];
+  const videoId = doc["@id"].match(Config.YT_REGEX)[1];
   const language = "en";
   const captionUrl = `https://video.google.com/timedtext?v=${videoId}&lang=${language}`;
   const captions = await Captions.getCaptions(captionUrl);
