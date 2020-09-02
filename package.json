@@ -25,7 +25,7 @@
     "dotenv": "^8.0.0",
     "duration-iso-8601": "^1.1.0",
     "feedbackfruits-knowledge-engine": "github:feedbackfruits/feedbackfruits-knowledge-engine#^1.4.5",
-    "googleapis": "^25.0.0",
+    "googleapis": "^39.1.0",
     "memux": "github:knowledge-express/memux#~0.4.1",
     "node-fetch": "^2.6.0",
     "p-queue": "^6.1.0"
